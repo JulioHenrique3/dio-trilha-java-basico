@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class ContaTerminal {
@@ -6,18 +5,16 @@ public class ContaTerminal {
         var scanner = new Scanner(System.in);
 
         System.out.print("Por favor, digite o número da agência: ");
-        String agencyName = scanner.next();
+        String agencyNumber = scanner.next();
 
-        System.out.printf("Por favor, digite o número da agência %s: ", agencyName);
-        var agencyNumber = scanner.nextInt();
+        System.out.printf("Por favor, digite o número da sua conta na agência %s: ", agencyNumber);
+        var accountNumber = scanner.nextInt();
 
         System.out.print("Por favor, digite seu nome: ");
         String clientName = scanner.next();
 
         var bankBalance = 237.48;
 
-        System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %s e seu saldo %s já está disponível para saque", clientName, agencyName, agencyNumber,bankBalance);
-
-        // System.out.print("");
+        System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %s e seu saldo %s já está disponível para saque", clientName,agencyNumber,accountNumber,bankBalance);
     }
 }
